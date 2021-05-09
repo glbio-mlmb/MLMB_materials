@@ -60,11 +60,11 @@ This script preprocess genomes and computes the intersection matrix between of b
 
 ### Input files:
 
-__172phages.fasta__
+* __172phages.fasta__
 
 This is a multifasta file with 172 phage genomes
 
-__BA000007.3.fasta__
+* __BA000007.3.fasta__
 
 _Escherichia coli O157:H7 str. Sakai_ complete genome
 
