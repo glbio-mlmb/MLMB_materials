@@ -1,14 +1,13 @@
-## Mar, 2021
-## Author: Sambhawa Priya, PhD candidate (BICB), Blekhman Lab. 
+## May 10, 2021
+## Author: Sambhawa Priya, PhD candidate (BICB), Blekhman Lab, University of Minnesota 
 ## Contact: priya030@umn.edu
 
-## This script is for hands-on tutorial on building a machine learning
-## model on microbiome data.
+## This script is for hands-on tutorial on building a machine learning model on microbiome data.
 ## This lecture has been adapted based on the following papers:
 ## Code and data adapted from Zhou et al., 2019: https://www.frontiersin.org/articles/10.3389/fgene.2019.00579/full
 ## Dataset orginally published at:  
 ## Singh et al. 2015: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579588/
-## Compiled by Duvallet et al.: https://www.ncbi.nlm.nih.gov/pubmed?Db=pubmed&Cmd=ShowDetailView&TermToSearch=29209090
+## Compiled by Duvallet et al. 2017: https://www.nature.com/articles/s41467-017-01973-8
 
 
 ## Initialization
@@ -35,7 +34,6 @@ table(metadata$Pathogen)
 # Campylobacter       Control    Salmonella      Shigella          STEC 
 #           78            82            71            41            32 
 
-
 ## How many samples per disease state?
 table(metadata$DiseaseState)
 # EDD   H 
@@ -57,7 +55,7 @@ table(metadata$DiseaseState)
 # 201  82
 ## This will be our classification problem! 
 
-otu <- read.table(paste0(current_dir,"/input/edd_singh.otu_table.100.denovo.rdp_assigned"),sep="\t",header=T,row.names=1, stringsAsFactors=TRUE)
+otu <- read.table(paste0(current_dir,"/input/edd_singh_otu_table"),sep="\t",header=T,row.names=1, stringsAsFactors=TRUE)
 dim(otu)
 #[1] 3698  338
 
@@ -202,7 +200,7 @@ plot(rf, col="blue",legacy.axes = TRUE)
 dev.off()
 
 ########## List feature importance in random forest ###########
-impVars <- varImp(rf_train)
+impVars <- varImp(rf_train) ## what is 
 ImpMeasure <- data.frame(impVars$importance)
 ImpMeasure <- ImpMeasure[order(ImpMeasure$Overall, decreasing = T), ,drop = F]
 ImpMeasure_top10 <- ImpMeasure[1:10, , drop = F]
