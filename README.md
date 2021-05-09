@@ -1,1 +1,1 @@
-# Materials for Machine Learning on Microbiome Data: Theory and Practice workshop
+# Materials for 'Machine Learning on Microbiome Data: Theory and Practice' workshop
