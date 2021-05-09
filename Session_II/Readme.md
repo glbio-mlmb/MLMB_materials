@@ -1,6 +1,6 @@
 # Materials for session 2
 
-Tatiana Lenskaia (lensk010@umn.edu)
+Tatiana Lenskaia, Ph.D. (lensk010@umn.edu)
 
 ## 1. Data aquisition
 
@@ -49,12 +49,10 @@ In the test folder, run the code using the following command:
 
 ### Scripts:
 
-__core_methods_mlmb.py__
-
+* __core_methods_mlmb.py__
 This script contains supplementary functions for data preprocessing.
 
-__IntersectionMatrix.py__
-
+* __IntersectionMatrix.py__
 This script preprocess genomes and computes the intersection matrix between of bacterial strains and phages. 
 
 
@@ -71,34 +69,27 @@ _Escherichia coli str. K-12 substr. MG1655_ complete genome
 
 ### Output files:
 
-__172phages.txt__
-
+* __172phages.txt__
 A list of accession numberrs for 172 phages
 
-__Info_172phages.csv__
-
+* __Info_172phages.csv__
 This file contains results of the data quality check including genome size, number of unrecognized nucleotides, and GC-content.
 
-__40_2E.coli_pathogen.csv__
-
+* __40_2E.coli_pathogen.csv__
 A sample intersection matrix for two strain of _E.coli_
 
 
 
 ## 3. Machine learning in R
 
-__40_pathogen_labels.csv__
-
+* __40_pathogen_labels.csv__
 The intersection matrix for 101 _E.coli_ strains and 172 phages.
 
-__40_pathogen(6phs)_labels.csv__
-
+* __40_pathogen(6phs)_labels.csv__
 The intersection matrix for 101 _E.coli_ strains and 6 indicator phages.
 
-__MLMB_Rcode.html__
-
+* __MLMB_Rcode.html__
 R code and results knitted in HTML format using R markdown file
 
-__MLMB_Rcode.Rmd__
-
+* __MLMB_Rcode.Rmd__
 R markdown file
