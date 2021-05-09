@@ -73,7 +73,7 @@ _Escherichia coli str. K-12 substr. MG1655_ complete genome
 A list of accession numberrs for 172 phages
 
 * __Info_172phages.csv__
-This file contains results of the data quality check including genome size, number of unrecognized nucleotides, and GC-content.
+This file contains results of the data quality check (genome size, unrecognized nucleotides, and GC-content).
 
 * __40_2E.coli_pathogen.csv__
 A sample intersection matrix for two strain of _E.coli_
