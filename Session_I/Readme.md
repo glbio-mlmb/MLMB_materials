@@ -4,8 +4,8 @@ Contact: Sambhawa Priya (*priya030 at umn.edu*)
 This contains script and data for Session 1 tutorial on applying machine learning to microbiome data.
 
 ### Directory structure ### 
-Please create a folder named _Session_1_tutorial_ at a relevant location on your computer.
-Place Rscript _MLMB_session_1_tutorial.R_ in _Session_1_tutorial_.  
+Please create a folder named _Session_1_tutorial_ at a relevant location on your computer.  
+Place the Rscript _MLMB_session_1_tutorial.R_ in _Session_1_tutorial_.  
 Next, create a directory within _Session_1_tutorial_ called _input_ and place the input files described below (metadata and otu table) in the _input_ directory.  
 
 ### Input data (available under folder "input") ###
@@ -15,7 +15,7 @@ This data was originally published by [Singh, Pallavi et al. “Intestinal micro
 - edd_singh.metadata.txt: The metadata file containing description of samples in the dataset.
 - edd_singh_otu_table: The OTU table containing microbiome abundance data (16S amplicaon sequencing).
 
-## R code ##
+### R code ###
 
 MLMB_session_1_tutorial.R: R script to implement machine learning pipeline on microbiome data.
    
