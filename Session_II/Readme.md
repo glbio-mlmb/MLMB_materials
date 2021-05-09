@@ -85,7 +85,7 @@ A sample intersection matrix for two strain of _E.coli_
 * __40_pathogen_labels.csv__
 The intersection matrix for 101 _E.coli_ strains and 172 phages.
 
-* __40_pathogen(6phs)_labels.csv__
+* **40_pathogen(6phs)_labels.csv**
 The intersection matrix for 101 _E.coli_ strains and 6 indicator phages.
 
 * __MLMB_Rcode.html__
