@@ -47,7 +47,7 @@ In the test folder, run the code using the following command:
 
 `python3 IntersectionMatrix.py`
 
-#### Scripts:
+### Scripts:
 
 __core_methods_mlmb.py__
 
@@ -58,20 +58,24 @@ __IntersectionMatrix.py__
 This script preprocess genomes and computes the intersection matrix between of bacterial strains and phages. 
 
 
-#### Input files:
+### Input files:
 
 __172phages.fasta__
+
 This is a multifasta file with 172 phage genomes
 
 __BA000007.3.fasta__
+
 _Escherichia coli O157:H7 str. Sakai_ complete genome
 
 __U00096.3.fasta__
+
 _Escherichia coli str. K-12 substr. MG1655_ complete genome
 
-#### Output files:
+### Output files:
 
 __172phages.txt__
+
 A list of accession numberrs for 172 phages
 
 __Info_172phages.csv__
@@ -79,6 +83,7 @@ __Info_172phages.csv__
 This file contains results of the data quality check including genome size, number of unrecognized nucleotides, and GC-content.
 
 __40_2E.coli_pathogen.csv__
+
 A sample intersection matrix for two strain of _E.coli_
 
 
@@ -86,13 +91,17 @@ A sample intersection matrix for two strain of _E.coli_
 ## 3. Machine learning in R
 
 __40_pathogen_labels.csv__
+
 The intersection matrix for 101 _E.coli_ strains and 172 phages.
 
 __40_pathogen(6phs)_labels.csv__
+
 The intersection matrix for 101 _E.coli_ strains and 6 indicator phages.
 
 __MLMB_Rcode.html__
+
 R code and results knitted in HTML format using R markdown file
 
 __MLMB_Rcode.Rmd__
+
 R markdown file
