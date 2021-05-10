@@ -29,11 +29,6 @@ metadata <- read.table(paste0(current_dir,"/input/edd_singh.metadata.txt"),sep="
 dim(metadata)
 # [1] 304   5
 
-## How many classes of pathogen? 
-table(metadata$Pathogen)
-# Campylobacter       Control    Salmonella      Shigella          STEC 
-#           78            82            71            41            32 
-
 ## How many samples per disease state?
 table(metadata$DiseaseState)
 # EDD   H 
