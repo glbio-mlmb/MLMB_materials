@@ -83,7 +83,7 @@ dim(otu) #[1] 1319  282
 
 ## Binning
 ## collapse OTUs to genus level by summing their respective abundance counts
-## Split taxa names by ";" into 8 parts
+## Split taxa names by ";" into 8 parts (taxonomic levels)
 tax_table <- str_split_fixed(rownames(otu),";",n=8)
 ## Append genus name (6th column in genus) to the otu table
 otu <- data.frame(genus=tax_table[,6],otu)
@@ -109,7 +109,6 @@ x <- t(x)
 
 ## relevel disease-state to make H as control
 levels(metadata$DiseaseState) #[1] "EDD" "H"  
-
 
 dim(x) #[1] 282 122
 ################ Train and Test ###############
@@ -187,15 +186,20 @@ rf_test <- rf_test[,1]
 rf <- roc(y.test,rf_test) ## pROC package
 auc <- rf$auc
 auc
-# Area under the curve: 0.9703
+# Area under the curve: 0.9633
 
 ## Plot ROC curve
-pdf(paste0(current_dir,"/output/ROC_Singh.pdf"))
+pdf(paste0(current_dir,"/ROC_curve.pdf"))
 plot(rf, col="blue",legacy.axes = TRUE)
 dev.off()
 
 ########## List feature importance in random forest ###########
-impVars <- varImp(rf_train) ## what is 
+## How is variable importance computed?
+## From caret documentation: "For each tree, the prediction accuracy on the out-of-bag portion of the data is recorded. 
+## Then the same is done after permuting each predictor variable. The difference between the two accuracies are then 
+## averaged over all trees, and normalized by the standard error."
+
+impVars <- varImp(rf_train) 
 ImpMeasure <- data.frame(impVars$importance)
 ImpMeasure <- ImpMeasure[order(ImpMeasure$Overall, decreasing = T), ,drop = F]
 ImpMeasure_top10 <- ImpMeasure[1:10, , drop = F]
