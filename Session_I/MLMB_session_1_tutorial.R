@@ -4,10 +4,14 @@
 
 ## This script is for hands-on tutorial on building a machine learning model on microbiome data.
 ## This lecture has been adapted based on the following papers:
-## Code and data adapted from Zhou et al., 2019: https://www.frontiersin.org/articles/10.3389/fgene.2019.00579/full
-## Dataset orginally published at:  
-## Singh et al. 2015: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579588/
-## Compiled by Duvallet et al. 2017: https://www.nature.com/articles/s41467-017-01973-8
+## The data used here is originally published by Singh, Pallavi et al. 
+## “Intestinal microbial communities associated with acute enteric infections and disease recovery.” 
+## Microbiome vol. 3 45. 22 Sep. 2015. 
+## It was complied as part of MicrobiomeHD as described in Duvallet et al., Nature Communications, 2017 
+## (https://www.nature.com/articles/s41467-017-01973-8),
+## and further analyzed and described by Zhou and Gallins et al., Frontiers in Genetics, 2019 
+## (https://www.frontiersin.org/articles/10.3389/fgene.2019.00579/full). 
+## We have adapted code and data from Zhou and Gallins et al., Frontiers in Genetics, 2019.
 
 
 ## Initialization
